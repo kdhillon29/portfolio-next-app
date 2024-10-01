@@ -10,12 +10,12 @@ export default function Projects({
   projects: ProjectMetadata[]
 }) {
   return (
-    <ul className='grid grid-cols-1 gap-8 sm:grid-cols-2'>
+    <ul className='grid grid-cols-2 gap-2 sm:grid-cols-3 md:gap-6'>
       {projects.map(project => (
         <li key={project.slug} className='group relative'>
           <Link href={`/projects/${project.slug}`}>
             {project.image && (
-              <div className='h-72 w-full overflow-hidden bg-muted sm:h-60'>
+              <div className='h-32 w-2/3 overflow-hidden bg-muted sm:h-52 sm:w-full'>
                 <Image
                   src={project.image}
                   alt={project.title || ''}
