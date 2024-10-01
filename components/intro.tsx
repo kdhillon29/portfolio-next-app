@@ -13,7 +13,7 @@ export default function Intro() {
       </div>
       <div className='relative'>
         <Image
-          className='flex-1 rounded-lg grayscale'
+          className='flex-1 rounded-lg hue-rotate-30 saturate-100 transition-all ease-linear hover:scale-105'
           src={authorImage}
           alt='Hamed Bahram'
           width={175}

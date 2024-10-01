@@ -6,8 +6,12 @@ export default function Header() {
     <header className='fixed inset-x-0 top-0 z-50 bg-background/75 py-6 backdrop-blur-sm'>
       <nav className='container flex max-w-3xl items-center justify-between'>
         <div>
-          <Link href='/' className='font-serif text-2xl font-bold'>
-            HB
+          <Link
+            href='/'
+            className='flex border-b-2 border-red-300 font-serif text-2xl font-bold'
+          >
+            <p className='skew-x-6'>K</p>
+            <p className='skew-y-12'>D</p>
           </Link>
         </div>
 
