@@ -24,6 +24,7 @@ export default function ContactForm() {
     defaultValues: {
       name: '',
       email: '',
+      phone: '',
       message: ''
     }
   })
@@ -44,7 +45,7 @@ export default function ContactForm() {
   return (
     <section className='relative isolate'>
       {/* Background pattern */}
-      <svg
+      {/* <svg
         className='absolute inset-0 -z-10 h-full w-full stroke-zinc-200 opacity-75 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)] dark:stroke-zinc-700'
         aria-hidden='true'
       >
@@ -76,7 +77,7 @@ export default function ContactForm() {
           strokeWidth={0}
           fill='url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)'
         />
-      </svg>
+      </svg> */}
 
       {/* Form */}
       <div className='relative'>
@@ -116,6 +117,22 @@ export default function ContactForm() {
               {errors.email?.message && (
                 <p className='ml-1 mt-2 text-sm text-rose-400'>
                   {errors.email.message}
+                </p>
+              )}
+            </div>
+            {/* phone */}
+            <div>
+              <Input
+                type='text'
+                id='phone'
+                autoComplete='phone'
+                placeholder='phone'
+                {...register('phone')}
+              />
+
+              {errors.phone?.message && (
+                <p className='ml-1 mt-2 text-sm text-rose-400'>
+                  {errors.phone.message}
                 </p>
               )}
             </div>

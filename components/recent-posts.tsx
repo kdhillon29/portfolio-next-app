@@ -6,9 +6,9 @@ export default async function RecentPosts() {
   const posts = await getPosts(4)
 
   return (
-    <section className='pb-24'>
+    <section className='pb-6'>
       <div>
-        <h2 className='title mb-12'>Recent posts</h2>
+        <h2 className='title mb-6'>Recent posts</h2>
         <Posts posts={posts} />
 
         <Link
