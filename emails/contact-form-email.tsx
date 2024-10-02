@@ -11,14 +11,17 @@ const ContactFormEmail: React.FC<Readonly<ContactFormEmailProps>> = ({
   phone,
   message
 }) => (
-  <div>
+  <div className='flex flex-col gap-3'>
     <h1>Contact form submission</h1>
     <p>
       From <strong>{name}</strong> at {email}
+      <br />
       <strong>phone:{phone}</strong>
     </p>
-    <h2>Message:</h2>
-    <p>{message}</p>
+    <div>
+      <h2>Message:</h2>
+      <p>{message}</p>
+    </div>
   </div>
 )
 
